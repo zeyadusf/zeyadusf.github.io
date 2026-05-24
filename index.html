@@ -415,42 +415,53 @@ footer .footer-em { color:var(--em); }
   <div class="projects-grid">
 
     <!-- TesseractRAG — FEATURED -->
-    <div class="project-card featured reveal">
-      <div class="project-body">
-        <div class="project-top">
-          <div style="display:flex;gap:8px;flex-wrap:wrap;">
-            <span class="project-badge">RAG System</span>
-            <span class="project-badge live">Live in Production</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/zeyadusf/TesseractRAG" target="_blank">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              GitHub
-            </a>
-            <a href="https://tesseractrag.ziayd-usf.workers.dev" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              Live Demo ↗
-            </a>
-          </div>
-        </div>
-        <div class="project-name">Tesseract<span>RAG</span></div>
-        <p class="project-desc">A fully deployed production RAG system with multi-session document Q&amp;A. Features a FastAPI backend, a modern frontend, and persistent cloud storage — engineered for reliability under real hardware constraints.</p>
-        <ul class="project-bullets">
-          <li>Hybrid retrieval: <strong>BM25 + FAISS + RRF fusion</strong> with cross-encoder reranking (ms-marco-MiniLM-L-6-v2)</li>
-          <li>Integrated <strong>Llama-3.1-8B-Instruct</strong> via HuggingFace Inference API with intelligent query routing</li>
-          <li>Memory-efficient architecture: lazy-loaded components, serialized indices, on-demand rebuilding</li>
-        </ul>
-        <div class="project-tech">
-          <span class="tech-tag">FastAPI</span><span class="tech-tag">FAISS</span><span class="tech-tag">BM25</span><span class="tech-tag">BGE Embeddings</span><span class="tech-tag">Docker</span><span class="tech-tag">Railway</span><span class="tech-tag">Cloudflare</span><span class="tech-tag">Backblaze B2</span>
-        </div>
+    <div class="project-card featured reveal visible">
+  <div class="project-body">
+    <div class="project-top">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <span class="project-badge">RAG System</span>
+        <span class="project-badge live">Live in Production</span>
       </div>
-      <div class="project-featured-meta">
-        <div class="featured-stat"><div class="fval">Hybrid</div><div class="flbl">Retrieval Strategy</div></div>
-        <div class="featured-stat"><div class="fval">Multi</div><div class="flbl">Session Support</div></div>
-        <div class="featured-stat"><div class="fval">Live</div><div class="flbl">Production Status</div></div>
+      <div class="project-links">
+        <a href="https://github.com/zeyadusf/TesseractRAG" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+          GitHub
+        </a>
+        <a href="https://tesseractrag.ziayd-usf.workers.dev" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          Live Demo ↗
+        </a>
       </div>
     </div>
-
+    <div class="project-name">Tesseract<span>RAG</span></div>
+    <p class="project-desc">A production RAG system rebuilt from scratch around a dispatcher-based layered architecture — swap any component (embedder, retriever, LLM) from a single <code>.env</code> variable without touching the pipeline logic.</p>
+    <ul class="project-bullets">
+      <li>Language-aware hybrid retrieval: <strong>BM25 + pgvector HNSW + RRF fusion</strong> — forces semantic-only search on cross-language (Arabic/English) queries where lexical matching breaks down</li>
+      <li>Multi-provider generation via <strong>Llama-3.3-70B (Groq)</strong> and <strong>Llama-3.1-8B (HuggingFace)</strong> with dual query rewriting for semantic and lexical retrieval paths</li>
+      <li>Automated RAG evaluation using <strong>Cohere as LLM-as-a-Judge</strong> — scores faithfulness, answer relevancy, context precision, and context recall per session</li>
+      <li>Role-based admin dashboard with full user lifecycle controls and platform-wide analytics</li>
+    </ul>
+    <div class="project-tech">
+      <span class="tech-tag">FastAPI</span>
+      <span class="tech-tag">PostgreSQL</span>
+      <span class="tech-tag">pgvector</span>
+      <span class="tech-tag">FAISS</span>
+      <span class="tech-tag">BM25</span>
+      <span class="tech-tag">Jina AI</span>
+      <span class="tech-tag">Groq</span>
+      <span class="tech-tag">HuggingFace</span>
+      <span class="tech-tag">Cohere</span>
+      <span class="tech-tag">Docker</span>
+      <span class="tech-tag">Railway</span>
+      <span class="tech-tag">Cloudflare</span>
+    </div>
+  </div>
+  <div class="project-featured-meta">
+    <div class="featured-stat"><div class="fval">AR/EN</div><div class="flbl">Bilingual Support</div></div>
+    <div class="featured-stat"><div class="fval">Hybrid</div><div class="flbl">Retrieval Strategy</div></div>
+    <div class="featured-stat"><div class="fval">Live</div><div class="flbl">Production Status</div></div>
+  </div>
+</div>
     <!-- Catch the AI -->
     <div class="project-card reveal reveal-delay-1">
       <div class="project-top">
